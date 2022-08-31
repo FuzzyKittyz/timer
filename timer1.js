@@ -11,6 +11,7 @@ for (const arg of argArray) {
       continue;//skips over the number and continues the loop
     }
     setTimeout(() => {
+      console.log('BEEP'),
       process.stdout.write('\x07');//beep sound
     }, Number(arg) * 1000)// number times 1000 to account for miliseconds
   }
